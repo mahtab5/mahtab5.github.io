@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+}
+
+header .navlist a {
+  font-family: 'Piazzolla', serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: #dadada;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+header .navlist a:hover {
+  color: #eeeeee;
+}
+
+header .navlist li {
+  list-style: none;
+  display: inline-block;
+  padding: 15px 15px;
+}
+
+header .logo {
+  font-family: 'IBM Plex Serif', serif;
+  text-decoration: none;
+  color: #e2e2e2;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header .logo:hover {
+  color: #eeeeee;
+}
+
+header .p {
+  background-color: #3A7C8A;
+}
+
+.in {
+  font-family: 'Montaga', serif;
+  font-size: 400%;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.im {
+  position: absolute;
+  top: -150px;
+  z-index: -1;
+  left: -30px;
+}
+/*# sourceMappingURL=style.css.map */

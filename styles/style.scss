@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+$link : rgb(218, 218, 218);
+$hover : #eeeeee;
+$nav : #3A7C8A;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    .navlist{
+        a{
+        font-family: 'Piazzolla', serif;
+        font-size: 15px;
+        text-decoration: none;
+        color: rgb(218, 218, 218);
+        transition: all 0.4s ease;
+
+        &:hover{
+            color: $hover;
+        }
+        }
+
+        li{
+            list-style: none;
+            display: inline-block;
+            padding: 15px 15px;
+        }
+    }
+
+    .logo {
+        font-family: 'IBM Plex Serif', serif;
+        text-decoration: none;
+        color: rgb(226, 226, 226);
+        transition:all 0.3s ease 0s ;
+
+        &:hover{
+            color: $hover;
+        }
+    }
+    .p{
+        background-color: $nav;
+    }
+}
+.in{
+    font-family: 'Montaga', serif;
+    font-size: 400%;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.im{
+    position: absolute;
+    top: -150px;
+    z-index: -1;
+    left: -30px;
+}
