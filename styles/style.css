@@ -58,19 +58,37 @@ header .p {
 
 .in {
   font-family: 'Montaga', serif;
-  font-size: 400%;
-  position: absolute;
+  font-size: 08vh;
+  position: relative;
   top: 120px;
-  left: 20px;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.cnt {
+  position: relative;
+}
+
+.waves {
+  left: 0;
+  top: 0;
+  position: absolute;
 }
 
 .im {
-  position: absolute;
-  top: -150px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
   z-index: -1;
-  left: -30px;
+  top: -2600px;
+}
+
+@media screen and (max-width: 1760px) {
+  .im {
+    top: -2300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
