@@ -1,0 +1,29 @@
+$headerclr:#45a29e;
+$hoverclr:#56c9c3;
+
+header{
+
+    .bar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    li{
+        list-style-type: none;
+        display: inline-block;
+        padding-top: 3vh;
+        padding-right: 5vh;
+        padding-left: 5vh ;
+
+        a{
+            color: $headerclr;
+            transition: all 0.3s ease 0s;
+
+            &:hover{
+                text-decoration: none;
+                color: $hoverclr;
+            }
+        }
+    }
+}

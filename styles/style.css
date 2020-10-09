@@ -1,94 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-header {
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@900&display=swap");
+header .bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px;
 }
 
-header .navlist a {
-  font-family: 'Piazzolla', serif;
-  font-size: 15px;
-  text-decoration: none;
-  color: #dadada;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-header .navlist a:hover {
-  color: #eeeeee;
-}
-
-header .navlist li {
-  list-style: none;
+header li {
+  list-style-type: none;
   display: inline-block;
-  padding: 15px 15px;
+  padding-top: 3vh;
+  padding-right: 5vh;
+  padding-left: 5vh;
 }
 
-header .logo {
-  font-family: 'IBM Plex Serif', serif;
-  text-decoration: none;
-  color: #e2e2e2;
+header li a {
+  color: #45a29e;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-header .logo:hover {
-  color: #eeeeee;
+header li a:hover {
+  text-decoration: none;
+  color: #56c9c3;
 }
 
-header .p {
-  background-color: #3A7C8A;
-}
-
-.in {
-  font-family: 'Montaga', serif;
-  font-size: 08vh;
-  position: relative;
-  top: 120px;
-  color: white;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.cnt {
-  position: relative;
-}
-
-.waves {
-  left: 0;
-  top: 0;
+.background {
   position: absolute;
-}
-
-.im {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: block;
   z-index: -1;
-  top: -2600px;
+  background-color: #1F2833;
+  height: 80vh;
+  width: 100%;
+  top: 0;
 }
 
-@media screen and (max-width: 1760px) {
-  .im {
-    top: -2300px;
-  }
+.name {
+  position: relative;
+  color: #66fcf1;
+  font-family: 'Commissioner', sans-serif;
+  font-size: 12vh;
+  text-align: center;
+  top: 7vh;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
