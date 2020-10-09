@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@380&display=swap');
+
 $headerclr:#45a29e;
 $hoverclr:#56c9c3;
 
@@ -13,17 +15,36 @@ header{
         list-style-type: none;
         display: inline-block;
         padding-top: 3vh;
-        padding-right: 5vh;
-        padding-left: 5vh ;
+        padding-right: 3vh;
+        padding-left: 3vh ;
 
         a{
             color: $headerclr;
+            letter-spacing: 2px;
             transition: all 0.3s ease 0s;
-
             &:hover{
                 text-decoration: none;
                 color: $hoverclr;
             }
+        }
+    }
+
+    .logo{
+        font-family: 'Oswald', sans-serif;
+        font-size : 4vh;
+        color:$headerclr;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        padding: 5vh;
+        position: relative;
+        top: 2vh;
+
+        &:hover, &:active, &:visited{
+            text-decoration: none;
+            color: $headerclr;
+        }
+        &:hover{
+            color:$hoverclr;
         }
     }
 }
