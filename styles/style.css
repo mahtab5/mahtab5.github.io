@@ -11,12 +11,16 @@ header .bar {
           justify-content: space-between;
 }
 
+header ul {
+  position: absolute;
+  right: 20px;
+}
+
 header li {
   list-style-type: none;
   display: inline-block;
-  padding-top: 3vh;
-  padding-right: 3vh;
-  padding-left: 3vh;
+  padding-top: 15px;
+  padding-left: 20px;
 }
 
 header li a {
@@ -33,14 +37,14 @@ header li a:hover {
 
 header .logo {
   font-family: 'Oswald', sans-serif;
-  font-size: 4vh;
+  font-size: 25px;
   color: #45a29e;
   text-decoration: none;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  padding: 5vh;
+  left: 15px;
   position: relative;
-  top: 2vh;
+  top: 15px;
 }
 
 header .logo:hover, header .logo:active, header .logo:visited {
@@ -50,6 +54,12 @@ header .logo:hover, header .logo:active, header .logo:visited {
 
 header .logo:hover {
   color: #56c9c3;
+}
+
+@media screen and (max-width: 650px) {
+  header .bar {
+    display: none;
+  }
 }
 
 .background {
