@@ -2,63 +2,137 @@
 @import url("https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@900&display=swap");
-header .bar {
+.bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-header ul {
-  position: absolute;
+ul {
   right: 20px;
 }
 
-header li {
+li {
   list-style-type: none;
   display: inline-block;
   padding-top: 15px;
   padding-left: 20px;
 }
 
-header li a {
+li a {
   color: #45a29e;
   letter-spacing: 2px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-header li a:hover {
+li a:hover {
   text-decoration: none;
   color: #56c9c3;
 }
 
-header .logo {
+.logo {
   font-family: 'Oswald', sans-serif;
   font-size: 25px;
+  position: relative;
+  text-align: center;
   color: #45a29e;
   text-decoration: none;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  left: 15px;
+  left: 20px;
   position: relative;
-  top: 15px;
+  top: 14px;
 }
 
-header .logo:hover, header .logo:active, header .logo:visited {
+.logo:hover, .logo:active, .logo:visited {
   text-decoration: none;
   color: #45a29e;
 }
 
-header .logo:hover {
+.logo:hover {
   color: #56c9c3;
 }
 
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #45a29e;
+}
+
 @media screen and (max-width: 650px) {
-  header .bar {
-    display: none;
+  body {
+    overflow-x: hidden;
+  }
+  .navlist {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 12vh;
+    background-color: #1F2833;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    z-index: 10;
+    -webkit-transform: translatex(100%);
+            transform: translatex(100%);
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  .navlist li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    position: relative;
+    top: 14px;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translatex(0%);
+          transform: translatex(0%);
+}
+
+@-webkit-keyframes navfade {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(50px);
+            transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@keyframes navfade {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(50px);
+            transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
 }
 
@@ -77,7 +151,7 @@ header .logo:hover {
   font-family: 'Commissioner', sans-serif;
   font-size: 12vh;
   text-align: center;
-  top: 7vh;
+  top: 60px;
 }
 
 .wave {
@@ -87,70 +161,6 @@ header .logo:hover {
   bottom: 0;
   left: 0;
   background-image: url(../images/wave.png);
-  -webkit-animation: anim 10s linear infinite;
-          animation: anim 10s linear infinite;
-}
-
-.wave::after {
-  content: '';
-  position: absolute;
-  height: 143px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  opacity: 0.6;
-  background-image: url(../images/wave.png);
-  -webkit-animation: anim 20s linear infinite -5s;
-          animation: anim 20s linear infinite -5s;
-}
-
-.wave::before {
-  content: '';
-  position: absolute;
-  height: 143px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  opacity: 0.4;
-  background-image: url(../images/wave.png);
-  -webkit-animation: animr 10s linear infinite;
-          animation: animr 10s linear infinite;
-}
-
-@-webkit-keyframes anim {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 1360px;
-  }
-}
-
-@keyframes anim {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 1360px;
-  }
-}
-
-@-webkit-keyframes animr {
-  0% {
-    background-position: 1360px;
-  }
-  100% {
-    background-position: 0px;
-  }
-}
-
-@keyframes animr {
-  0% {
-    background-position: 1360px;
-  }
-  100% {
-    background-position: 0px;
-  }
 }
 
 * {

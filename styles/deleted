@@ -1,0 +1,52 @@
+.wave{
+    position: absolute;
+    height: 143px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/wave.png);
+    animation: anim 10s linear infinite;
+
+    &::after{
+        content: '';
+        position: absolute;
+        height: 143px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        opacity: 0.6;
+        background-image: url(../images/wave.png);
+        animation: anim 20s linear infinite -5s;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        height: 143px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        opacity: 0.4;
+        background-image: url(../images/wave.png);
+        animation: animr 10s linear infinite;
+    }
+}
+
+
+@keyframes anim{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1360px;
+    }
+}
+
+@keyframes animr{
+    0%{
+        background-position: 1360px;
+    }
+    100%{
+        background-position: 0px;
+    }
+}
